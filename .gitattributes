@@ -1,0 +1,9 @@
+# .rd files in "rd files/" are RDWorks laser-cutter jobs for the robot body, not R code.
+# Mark them as binary and exclude them from GitHub's language statistics.
+*.rd binary linguist-detectable=false
+
+# DXF CAD drawings for the laser-cut parts
+*.dxf linguist-detectable=false
+
+# Arduino sketches count as C++
+*.ino linguist-language=C++
